@@ -1,8 +1,3 @@
-Based on the source code analysis of your uploaded files, here is a comprehensive `README.md` file for your **Quanta VS Code Extension**.
-
-I have extracted the features, syntax rules, snippets, and metadata directly from your `package.json`, `language-configuration.json`, and syntax files to make this accurate.
-
----
 
 # Quanta Language Support for VS Code
 
