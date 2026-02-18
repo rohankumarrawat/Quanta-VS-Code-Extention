@@ -1,0 +1,35 @@
+{
+  "name": "quanta-lang",
+  "displayName": "Quanta Language",
+  "description": "Language support for Quanta (.qnt)",
+  "icon": "icon.png",
+  "version": "0.0.1",
+  "publisher": "Rohan",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "quanta",
+      "aliases": ["Quanta", "quanta"],
+      "extensions": [".qnt"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icon.png",
+        "dark": "./icon.png"
+      }
+    }],
+    "grammars": [{
+      "language": "quanta",
+      "scopeName": "source.quanta",
+      "path": "./syntaxes/quanta.tmLanguage.json"
+    }],
+    "snippets": [{
+      "language": "quanta",
+      "path": "./snippets/snippets.json"
+    }]
+  }
+}

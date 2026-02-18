@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Quanta",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#functions"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [{
+        "name": "keyword.control.quanta",
+        "match": "\\b(if|else|loop|return|def|extern)\\b"
+      }]
+    },
+    "types": {
+      "patterns": [{
+        "name": "storage.type.quanta",
+        "match": "\\b(int|float|bool|char|string|var)\\b"
+      }]
+    },
+    "functions": {
+      "patterns": [{
+        "name": "support.function.quanta",
+        "match": "\\b(print)\\b"
+      }]
+    },
+    "strings": {
+      "name": "string.quoted.double.quanta",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.quanta",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.quanta",
+          "begin": "'''",
+          "end": "'''"
+        },
+        {
+          "name": "comment.block.quanta",
+          "begin": "\"\"\"",
+          "end": "\"\"\""
+        },
+        {
+          "name": "comment.line.quanta",
+          "match": "(@|//).*$"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.quanta"
+}
